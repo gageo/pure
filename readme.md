@@ -107,6 +107,7 @@ Colors can be changed by using [`zstyle`](http://zsh.sourceforge.net/Doc/Release
 - `git:arrow` (cyan) - For `PURE_GIT_UP_ARROW` and `PURE_GIT_DOWN_ARROW`.
 - `git:branch` (242) - The name of the current branch when in a Git repository.
 - `git:branch:cached` (red) - The name of the current branch when the data isn't fresh.
+- `git:branch:dirty` (9) - For `PURE_GIT_DIRTY_SYMBOL`.
 - `host` (242) - The hostname when on a remote machine.
 - `path` (blue) - The current path, for example, `PWD`.
 - `prompt:error` (red) - The `PURE_PROMPT_SYMBOL` when the previous command has *failed*.
@@ -124,10 +125,10 @@ path
 |          |       |        host
 |          |       |        |
 ~/dev/pure master* ⇡ zaphod@heartofgold  42s
-venv ❯               |                   |
-|    |               |                   execution_time
-|    |               user
-|    prompt
+venv ❯          |    |                   |
+|    |           |    |                   execution_time
+|    |           |    user
+|    prompt      git:branch:dirty
 virtualenv
 ```
 
